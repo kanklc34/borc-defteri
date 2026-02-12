@@ -1,38 +1,202 @@
+body {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f6f6f6;
+  transition: background 0.3s ease;
+}
+
 .App {
-  text-align: center;
+  padding: 15px;
+  max-width: 500px;
+  margin: auto;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.gece-modu {
+  background: #121212;
+  color: #e0e0e0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Başlık */
+h1 { text-align: center; margin-bottom: 20px; }
+
+/* Input ve Button */
+input, select, button {
+  margin: 5px 0;
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.gece-modu input, .gece-modu select {
+  background: #1e1e1e;
+  color: #e0e0e0;
+  border: 1px solid #555;
+}
+
+.gece-modu button {
+  background-color: #1976d2;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+input, select { width: 100%; }
+
+button {
+  width: 100%;
+  background-color: #4CAF50;
+  border: none;
+  font-weight: bold;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  transition: all 0.2s ease;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+button:hover {
+  background-color: #45a049;
 }
+
+/* Basma animasyonu */
+.buton-anim:active {
+  transform: scale(0.97);
+  box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+}
+
+.gece-toggle {
+  width: auto;
+  padding: 6px 12px;
+  margin-bottom: 10px;
+  background: #1976d2;
+}
+
+.gece-toggle:hover { background: #115293; }
+
+/* Bildirim */
+.bildirim {
+  position: fixed;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #1976d2;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 20px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+  z-index: 1000;
+  animation: fadein 0.3s ease;
+}
+
+.gece-modu .bildirim {
+  background: #3880d0;
+  color: #fff;
+}
+
+@keyframes fadein { from {opacity:0} to {opacity:1} }
+
+/* Arama input */
+.arama-input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+}
+
+/* Kişi kartları */
+.kisi-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 15px;
+  background: white;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.gece-modu .kisi-card { background: #1e1e1e; color: #e0e0e0; }
+
+.kisi-isim { font-weight: bold; flex: 1; cursor: pointer; }
+
+.kisi-sil {
+  width: 28px;
+  height: 28px;
+  font-size: 14px;
+  padding: 0;
+  border-radius: 50%;
+  border: 1px solid #c62828;
+  background: transparent;
+  color: #c62828;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.kisi-sil:hover { background: #c62828; color: white; }
+
+/* Bakiye durumu */
+.borc-status {
+  font-size: 0.75em;
+  padding: 3px 10px;
+  border-radius: 14px;
+  font-weight: bold;
+  color: white;
+}
+
+.borc-status.alacak { background-color: #2e7d32; }
+.borc-status.borc { background-color: #c62828; }
+.borc-status.notr { background-color: #555; }
+
+.gece-modu .borc-status.alacak { background-color: #388e3c; }
+.gece-modu .borc-status.borc { background-color: #d32f2f; }
+.gece-modu .borc-status.notr { background-color: #777; }
+
+/* Hareket kartları */
+.hareket-card {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 12px;
+  margin-bottom: 8px;
+  border-radius: 8px;
+  background: #fff;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+  flex-wrap: wrap;
+}
+
+.gece-modu .hareket-card { background: #1e1e1e; color: #e0e0e0; }
+
+.hareket-card span:first-child { flex: 1; }
+.onay-bildirim {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #fff;
+  color: #000;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  z-index: 1100;
+  width: 90%;
+  max-width: 320px;
+  text-align: center;
+  
+}
+
+.gece-modu .onay-bildirim { background: #1e1e1e; color: #e0e0e0; }
+
+.onay-bildirim button {
+  margin: 10px 5px 0 5px;
+  padding: 6px 12px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.2s ease;
+  width: 45%;
+}
+
+.onay-evet { background: #2e7d32; color: white; }
+.onay-hayir { background: #c62828; color: white; }
+
+.onay-evet:hover { background: #388e3c; }
+.onay-hayir:hover { background: #d32f2f; }
