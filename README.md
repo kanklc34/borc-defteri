@@ -14,7 +14,25 @@ Basit ve modern bir borç/alacak takip uygulaması.
 - Responsive tasarım
 
 ## Teknolojiler
-=======
+
+🟦 Frontend
+React (Create React App)
+JavaScript
+HTML5
+CSS3
+
+🟪 PWA
+Web App Manifest
+Service Worker (CRA default)
+Standalone mode
+🟩 Package Manager
+Node.js
+npm
+
+🟨 Versiyon Kontrol
+Git
+GitHub
+
 # 📒 BorçDefteri
 
 ![License](https://img.shields.io/badge/License-MIT-green.svg)
@@ -26,7 +44,6 @@ Basit, modern ve mobil uyumlu bir borç / alacak takip uygulaması.
 BorçDefteri, kişisel hesap takibini kolaylaştırmak için geliştirilmiş minimal bir web uygulamasıdır.  
 Veriler tarayıcıda güvenli şekilde LocalStorage kullanılarak saklanır.
 
----
 
 ## 🚀 Özellikler
 
@@ -39,19 +56,6 @@ Veriler tarayıcıda güvenli şekilde LocalStorage kullanılarak saklanır.
 - 📱 Responsive tasarım
 - 📲 PWA desteği (Ana ekrana eklenebilir)
 
----
-
-## 🛠 Kullanılan Teknolojiler
->>>>>>> 4976d2650c9cfb9ce7d8a5b75ec6b3dd04fb381d
-
-- React
-- CSS3
-- LocalStorage
-<<<<<<< HEAD
-
-## Demo
-
-Canlı demo: (link buraya)
 
 ## Kurulum
 
@@ -63,8 +67,7 @@ npm start
 MIT
 =======
 - Cloudflare Pages (deploy)
-
----
+  
 
 ## 📸 Demo
 
@@ -76,7 +79,7 @@ Ekran görüntüsü / gif:
 
 
 
----
+
 
 ## ⚙ Kurulum
 
