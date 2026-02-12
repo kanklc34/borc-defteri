@@ -1,49 +1,11 @@
-
-# BorçDefteri
-
-Basit ve modern bir borç/alacak takip uygulaması.
-
-## Özellikler
-
-- Kişi ekleme
-- Borç / alacak takibi
-- Hareket geçmişi 
-- Gece modu
-- Özel silme onayı
-- LocalStorage ile veri saklama
-- Responsive tasarım
-
-## Teknolojiler
-
-🟦 Frontend
-React (Create React App)
-JavaScript
-HTML5
-CSS3
-
-🟪 PWA
-Web App Manifest
-Service Worker (CRA default)
-Standalone mode
-🟩 Package Manager
-Node.js
-npm
-
-🟨 Versiyon Kontrol
-Git
-GitHub
-
 # 📒 BorçDefteri
-
-![License](https://img.shields.io/badge/License-MIT-green.svg)
-![React](https://img.shields.io/badge/React-18-blue)
-![Status](https://img.shields.io/badge/Status-Active-success)
 
 Basit, modern ve mobil uyumlu bir borç / alacak takip uygulaması.
 
 BorçDefteri, kişisel hesap takibini kolaylaştırmak için geliştirilmiş minimal bir web uygulamasıdır.  
-Veriler tarayıcıda güvenli şekilde LocalStorage kullanılarak saklanır.
+Veriler tarayıcıda güvenli şekilde **LocalStorage** kullanılarak saklanır.
 
+---
 
 ## 🚀 Özellikler
 
@@ -56,35 +18,32 @@ Veriler tarayıcıda güvenli şekilde LocalStorage kullanılarak saklanır.
 - 📱 Responsive tasarım
 - 📲 PWA desteği (Ana ekrana eklenebilir)
 
+---
 
-## Kurulum
+## 🛠️ Kullanılan Teknolojiler
 
-npm install
-npm start
+### 🟦 Frontend
+- React (Create React App)
+- JavaScript (ES6+)
+- HTML5
+- CSS3
 
-## Lisans
+### 🟪 PWA
+- Web App Manifest
+- Service Worker (CRA default)
+- Standalone Mode
 
-MIT
-=======
-- Cloudflare Pages (deploy)
-  
+### 🟩 Development Tools
+- Node.js
+- npm
+- Git
+- GitHub
 
-## 📸 Demo
+---
 
-Canlı demo:  
-👉 https://borc-defteri.pages.dev
-
-
-<img width="437" height="774" alt="Ekran görüntüsü 2026-02-12 115131" src="https://github.com/user-attachments/assets/f78aa259-c011-4da1-895f-079e1431b6ae" />
-
-
-
-
-
-## ⚙ Kurulum
+## ⚙️ Kurulum
 
 Projeyi klonlayın:
 
 ```bash
-git clone https://github.com/kanklc/borc-defteri.git
->>>>>>> 4976d2650c9cfb9ce7d8a5b75ec6b3dd04fb381d
+git clone https://github.com/kanklc34/borc-defteri.git
