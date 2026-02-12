@@ -7,7 +7,7 @@ Basit ve modern bir borç/alacak takip uygulaması.
 
 - Kişi ekleme
 - Borç / alacak takibi
-- Hareket geçmişi
+- Hareket geçmişi 
 - Gece modu
 - Özel silme onayı
 - LocalStorage ile veri saklama
