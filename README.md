@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # BorçDefteri
 
 Basit ve modern bir borç/alacak takip uygulaması.
