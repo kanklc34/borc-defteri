@@ -72,8 +72,9 @@ Canlı demo:
 👉 https://borc-defteri.pages.dev
 
 Ekran görüntüsü / gif:
+<img width="437" height="774" alt="Ekran görüntüsü 2026-02-12 115131" src="https://github.com/user-attachments/assets/f78aa259-c011-4da1-895f-079e1431b6ae" />
 
-![Demo](./demo.gif)
+
 
 ---
 
